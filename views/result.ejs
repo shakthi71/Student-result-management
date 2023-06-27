@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result</title>
+    <!-- chartjs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 px-20">
+    <div class="flex justify-center my-10">
+      <h3 class="text-2xl font-semibold mx-5">
+        Register No: <%=mark.registerNumber%>
+      </h3>
+      <h3 class="text-2xl font-semibold mx-5">Date of birth: <%=mark.dob%></h3>
+    </div>
+    <div class="grid grid-cols-2 gap-5">
+      <div>
+        <table
+          class="bg-white rounded-xl px-20 py-10 drop-shadow-lg mx-auto overflow-hidden w-full"
+        >
+          <thead>
+            <tr class="bg-blue-500 text-white">
+              <th class="py-5 font-semibold">SUBJECT</th>
+              <th class="py-5 font-semibold">SCORE</th>
+              <th class="py-5 font-semibold">RESULT</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="py-3 px-2">OOSE</td>
+              <td class="py-3 px-2" id="oose"><%=mark.oose%></td>
+              <td class="py-3 px-2"><%=mark.oose >= 35 ? "Pass" : "Fail"%></td>
+            </tr>
+            <tr>
+              <td class="py-3 px-2">OS</td>
+              <td class="py-3 px-2" id="os"><%=mark.os%></td>
+              <td class="py-3 px-2"><%=mark.os >= 35 ? "Pass" : "Fail"%></td>
+            </tr>
+            <tr>
+              <td class="py-3 px-2">PQT</td>
+              <td class="py-3 px-2" id="pqt"><%=mark.pqt%></td>
+              <td class="py-3 px-2"><%=mark.pqt >= 35 ? "Pass" : "Fail"%></td>
+            </tr>
+            <tr>
+              <td class="py-3 px-2">DAA</td>
+              <td class="py-3 px-2" id="daa"><%=mark.daa%></td>
+              <td class="py-3 px-2"><%=mark.daa >= 35 ? "Pass" : "Fail"%></td>
+            </tr>
+            <tr>
+              <td class="py-3 px-2">DBMS</td>
+              <td class="py-3 px-2" id="dbms"><%=mark.dbms%></td>
+              <td class="py-3 px-2"><%=mark.dbms >= 35 ? "Pass" : "Fail"%></td>
+            </tr>
+            <tr>
+              <td class="py-3 px-2">JP</td>
+              <td class="py-3 px-2" id="jp"><%=mark.jp%></td>
+              <td class="py-3 px-2"><%=mark.jp >= 35 ? "Pass" : "Fail"%></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="bg-white rounded-xl flex items-center p-5 drop-shadow-lg">
+        <canvas id="myChart"></canvas>
+      </div>
+    </div>
+    <script src="/frontend_js/result.js"></script>
+  </body>
+</html>

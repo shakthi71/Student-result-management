@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin login</title>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <h1 class="text-center font-bold text-4xl my-10">Admin Login</h1>
+    <form
+      action="/admin-login"
+      method="post"
+      class="bg-white border rounded-xl px-20 py-10 w-1/2 drop-shadow-lg mx-auto"
+    >
+      <div class="mb-5">
+        <label for="username" class="font-semibold mb-3 inline-block"
+          >Username</label
+        ><br />
+        <input
+          type="text"
+          name="username"
+          id="username"
+          class="border border-gray-400 p-2 rounded-xl w-full outline-blue-500"
+        />
+      </div>
+      <div>
+        <label for="password" class="font-semibold mb-3 inline-block"
+          >Password</label
+        ><br />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          class="border border-gray-400 p-2 rounded-xl w-full outline-blue-500"
+        />
+      </div>
+      <div class="flex justify-center mt-5">
+        <input
+          type="submit"
+          value="Login"
+          class="bg-blue-500 text-white py-2 px-5 rounded-xl cursor-pointer hover:bg-blue-600"
+        />
+      </div>
+    </form>
+    <script src="/frontend_js/admin-login.js"></script>
+  </body>
+</html>

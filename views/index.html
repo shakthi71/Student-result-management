@@ -1,0 +1,181 @@
+<!-- <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="style.css" rel="stylesheet">
+    <title>STUDENT RESULT MANAGEMENT</title>
+</head>
+<body>
+    
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6 col-md-7 intro-section">
+            <div class="brand-wrapper"
+
+            </div>
+            <div class="intro-content-wrapper">
+                <h1 class="intro-title"><b><p style="color: black">Check your results here</p></b></h1>
+                
+            </div>
+            <div class="intro-section-footer">
+                <na class="footer-nav"> <a href="#!"></a> <a href="#!"></a> <a href="#!"></a> </na>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-5 form-section">
+            <div class="login-wrapper">
+                <h2 class="login-title" id="login"><i><p style="color: black">RESULT</i></p></h2>
+
+
+
+                <form name="loginform">
+                    <div class="form-group"> <label for="email" class="sr-only"><b><p style="color: black">REGISTER NUMBER</b></label> <input  type="text" name="user_name" placeholder="11322003xxxx" /></div>
+                    <div class="form-group mb-3"> <label for="password" class="sr-only"><b><p style="color: black">DATE OF BIRTH</b></label> <br><input  type="password" name="pass_word" placeholder="DDMMYYYY" /> </div>
+                    <div class="d-flex justify-content-between align-items-center mb-5"> <input  type="button" value="login"onclick="login()"/></div>
+                </form>
+
+               
+                	
+                
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+
+<script>
+  function login()
+  {
+        var user = document.loginform.user_name.value;
+        var pass = document.loginform.pass_word.value;
+  		if(user == "" || pass == "")
+  		{
+          alert("sorry...Please Enter Username and Passowrd");
+     	}
+     	else
+     	{
+  			if((user == "113220031120" || user == "113220031120") && pass == "19062001")
+  			{
+          		window.location = "page2.html";
+   			}
+    		else
+    		{
+         		if((user == "113220031121" || user == "113220031121") && pass == "05042000")
+  				{
+          			window.location = "page3.html";
+   				}
+   				else
+    			{
+         			if((user == "113220031146" || user == "113220031146") && pass == "21112003")
+  					{
+          				window.location = "page4.html";
+   					}
+   					else
+    				{
+         				if((user == "113220031143" || user == "113220031143") && pass == "30122000")
+  						{
+          					window.location = "page5.html";
+   						}
+   						else
+    					{
+         					if((user == "113220031185" || user == "113220031185") && pass == "19082003")
+  							{
+          						window.location = "page6.html";
+   							}
+   							else
+    						{
+         						if((user == "113220031155" || user == "113220031155") && pass == "12062003")
+  								{
+          							window.location = "page7.html";
+   								}
+   								else
+    							{
+         							if((user == "113220031136" || user == "113220031136") && pass == "20072001")
+  									{
+          								window.location = "page8.html";
+   									}
+   									else
+    								{
+         								if((user == "113220031199" || user == "113220031199") && pass == "01012003")
+  										{
+          									window.location = "page9.html";
+   										}
+   										else
+    									{
+         									if((user == "113220031101" || user == "113220031101") && pass == "25112002")
+  											{
+          										window.location = "page10.html";
+   											}
+   											else
+    										{
+         										if((user == "113220031131" || user == "113220031131") && pass == "31032001")
+  												{
+          											window.location = "page11.html";
+   												}
+   												else
+   												{
+         											alert("Please Enter Correct Credentials");
+  												}
+  											}
+  										}
+  									}
+  								}
+  							}
+  						}
+  					}
+  				}
+  			}
+       }
+  }
+</script>
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student login</title>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <h1 class="text-center font-bold text-4xl my-10">Student Login</h1>
+    <form
+      action="/student-login"
+      method="post"
+      class="bg-white border rounded-xl px-20 py-10 w-1/2 drop-shadow-lg mx-auto"
+    >
+      <div class="mb-5">
+        <label for="register-number" class="font-semibold mb-3 inline-block"
+          >Regsiter number</label
+        ><br />
+        <input
+          type="number"
+          name="register-number"
+          id="register-number"
+          class="border border-gray-400 p-2 rounded-xl w-full outline-blue-500"
+        />
+      </div>
+      <div>
+        <label for="dob" class="font-semibold mb-3 inline-block">Password</label
+        ><br />
+        <input
+          type="date"
+          name="dob"
+          id="dob"
+          class="border border-gray-400 p-2 rounded-xl w-full outline-blue-500"
+        />
+      </div>
+      <div class="flex justify-center mt-5">
+        <input
+          type="submit"
+          value="Get marks"
+          class="bg-blue-500 text-white py-2 px-5 rounded-xl cursor-pointer hover:bg-blue-600"
+        />
+      </div>
+    </form>
+    <script src="/frontend_js/index.js"></script>
+  </body>
+</html>

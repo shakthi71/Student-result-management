@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student marks</title>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 pb-20">
+    <h1 class="text-center font-bold text-4xl my-10">Student marks</h1>
+    <table
+      class="bg-white rounded-xl px-20 py-10 w-1/2 drop-shadow-lg mx-auto overflow-hidden"
+    >
+      <thead>
+        <tr class="bg-blue-500 text-white">
+          <th class="py-5 font-semibold">REGISTER NO</th>
+          <th class="py-5 font-semibold">OOSE</th>
+          <th class="py-5 font-semibold">OS</th>
+          <th class="py-5 font-semibold">PQT</th>
+          <th class="py-5 font-semibold">DAA</th>
+          <th class="py-5 font-semibold">DBMS</th>
+          <th class="py-5 font-semibold">JP</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% marks.forEach((mark)=>{%>
+        <tr class="hover:bg-blue-100">
+          <td class="py-3 px-2"><%=mark.registerNumber%></td>
+          <td class="py-3 px-2"><%=mark.oose%></td>
+          <td class="py-3 px-2"><%=mark.os%></td>
+          <td class="py-3 px-2"><%=mark.pqt%></td>
+          <td class="py-3 px-2"><%=mark.daa%></td>
+          <td class="py-3 px-2"><%=mark.dbms%></td>
+          <td class="py-3 px-2"><%=mark.jp%></td>
+        </tr>
+        <%});%>
+      </tbody>
+    </table>
+    <script src="/frontend_js/show-marks.js"></script>
+  </body>
+</html>

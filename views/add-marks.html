@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add marks</title>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 pb-20">
+    <h1 class="text-center font-bold text-4xl my-10">Add marks</h1>
+    <form
+      action="/add-marks"
+      method="post"
+      class="bg-white border rounded-xl px-20 py-10 w-1/2 drop-shadow-lg mx-auto"
+    >
+      <h4 class="text-2xl font-bold mb-4 text-blue-500">Add student details</h4>
+      <div class="mb-5">
+        <label for="register-number" class="font-semibold mb-3 inline-block"
+          >Register number</label
+        ><br />
+        <input
+          type="number"
+          name="register-number"
+          id="register-number"
+          class="border border-gray-400 p-2 rounded-xl w-full outline-blue-500"
+        />
+      </div>
+      <div class="mb-5">
+        <label for="dob" class="font-semibold mb-3 inline-block"
+          >Date of birth</label
+        ><br />
+        <input
+          type="date"
+          name="dob"
+          id="dob"
+          class="border border-gray-400 p-2 rounded-xl w-full outline-blue-500"
+        />
+      </div>
+      <h4 class="text-2xl font-bold mb-4 text-blue-500">
+        Enter marks of the subjects
+      </h4>
+      <div class="mb-5">
+        <label for="oose" class="font-semibold mb-3 inline-block"
+          >Object oriented software engineering</label
+        ><br />
+        <input
+          type="number"
+          name="oose"
+          id="oose"
+          class="border border-gray-400 p-2 rounded-xl w-full outline-blue-500"
+        />
+      </div>
+      <div class="mb-5">
+        <label for="jp" class="font-semibold mb-3 inline-block"
+          >Java programming</label
+        ><br />
+        <input
+          type="number"
+          name="jp"
+          id="jp"
+          class="border border-gray-400 p-2 rounded-xl w-full outline-blue-500"
+        />
+      </div>
+      <div class="mb-5">
+        <label for="dbms" class="font-semibold mb-3 inline-block"
+          >Database management system</label
+        ><br />
+        <input
+          type="number"
+          name="dbms"
+          id="dbms"
+          class="border border-gray-400 p-2 rounded-xl w-full outline-blue-500"
+        />
+      </div>
+      <div class="mb-5">
+        <label for="os" class="font-semibold mb-3 inline-block"
+          >Operating system</label
+        ><br />
+        <input
+          type="number"
+          name="os"
+          id="os"
+          class="border border-gray-400 p-2 rounded-xl w-full outline-blue-500"
+        />
+      </div>
+      <div class="mb-5">
+        <label for="pqt" class="font-semibold mb-3 inline-block"
+          >Probability and queueing theory</label
+        ><br />
+        <input
+          type="number"
+          name="pqt"
+          id="pqt"
+          class="border border-gray-400 p-2 rounded-xl w-full outline-blue-500"
+        />
+      </div>
+      <div class="mb-5">
+        <label for="daa" class="font-semibold mb-3 inline-block"
+          >Design and analysis of algorithm</label
+        ><br />
+        <input
+          type="number"
+          name="daa"
+          id="daa"
+          class="border border-gray-400 p-2 rounded-xl w-full outline-blue-500"
+        />
+      </div>
+      <div class="flex justify-center mt-5">
+        <input
+          type="submit"
+          value="Add"
+          class="bg-blue-500 text-white py-2 px-5 rounded-xl cursor-pointer hover:bg-blue-600 w-full"
+        />
+      </div>
+    </form>
+    <script src="/frontend_js/add-marks.js"></script>
+  </body>
+</html>
